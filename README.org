@@ -1,0 +1,19 @@
+* これは何？
+actix-webでログインAPIを作りました。
+
+* 使い方
+
+** DBを用意する
+適当なDBを用意して、table.sqlのようなユーザーテーブルを作成します。
+
+** .envを作成する
+.env.exampleを参考にして.envを作成してください。
+- DATABASE_URL
+  これは作成したDBのURLです。
+- RUST_LOG
+  loggerの設定です。開発時はdebugがよいと思います。
+- AUTH_SECRET
+  JWTトークンの秘密鍵です。
+
+  
+
